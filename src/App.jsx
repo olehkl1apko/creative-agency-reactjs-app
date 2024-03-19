@@ -3,12 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
   Header,
   Footer,
-  HomePage,
   DemosPage,
   ServicesPage,
   PagePage,
   ContactPage,
 } from "./components";
+import HomePage from "./pages/HomePage";
 
 const App = () => {
   return (
