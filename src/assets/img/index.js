@@ -5,7 +5,7 @@ import arrow_right from "./arrow-right.svg";
 import behince from "./behince.svg";
 import chevron_down from "./chevron-down.svg";
 import close from "./close.svg";
-import code_coding from "./code-coding-development-programming-web-webpage-svgrepo-com.svg";
+import development_svg from "./code-coding-development-programming-web-webpage-svgrepo-com.svg";
 import dashborad from "./dashborad-photo.svg";
 import dribble from "./dribble.svg";
 import facebook from "./facebook.svg";
@@ -14,9 +14,9 @@ import instagram from "./instagram.svg";
 import landing_page from "./landing-page-photo.svg";
 import medium from "./medium.svg";
 import rectangle from "./rectangle.svg";
-import strategy from "./strategy.svg";
+import strategy_svg from "./strategy.svg";
 import twitter from "./twitter.svg";
-import vector_art from "./vector-art-and-design-svgrepo-com.svg";
+import design_svg from "./vector-art-and-design-svgrepo-com.svg";
 
 export {
   landing_page,
@@ -27,7 +27,7 @@ export {
   arrow_right,
   chevron_down,
   close,
-  code_coding,
+  development_svg,
   dashborad,
   dribble,
   facebook,
@@ -35,7 +35,7 @@ export {
   instagram,
   medium,
   rectangle,
-  strategy,
+  strategy_svg,
   twitter,
-  vector_art,
+  design_svg,
 };

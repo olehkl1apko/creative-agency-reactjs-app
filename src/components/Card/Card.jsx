@@ -1,6 +1,5 @@
 import {
   Box,
-  MuiCard,
   CardActions,
   CardContent,
   Button,
@@ -8,6 +7,7 @@ import {
   List,
   ListItem,
 } from "@mui/material";
+import MuiCard from "@mui/material/Card";
 
 import { arrow_right } from "../../assets/img";
 import styles from "./styles";
