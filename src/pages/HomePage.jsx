@@ -1,11 +1,11 @@
-import { Hero, CreativeDesign } from "../components";
+import { Hero, CreativeDesign, Experience } from "../components";
 
 const HomePage = () => {
   return (
     <>
       <Hero />
       <CreativeDesign />
-      {/* <Experience /> */}
+      <Experience />
     </>
   );
 };
