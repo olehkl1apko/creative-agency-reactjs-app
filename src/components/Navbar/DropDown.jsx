@@ -1,49 +1,34 @@
 import { useState } from "react";
-import Button from "@mui/material/Button";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
+import { Button } from "@mui/material";
 
 import arrow from "../../assets/img/chevron-down.svg";
 import { styles } from "./styles";
+import { SubMenu } from "./Submenu";
 
 export default function BasicMenu({ page }) {
   const [anchorEl, setAnchorEl] = useState(null);
-  const open = Boolean(anchorEl);
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+  const isOpen = Boolean(anchorEl);
 
   return (
     <div>
       <Button
         disableRipple
         id="basic-button"
-        aria-controls={open ? "basic-menu" : undefined}
+        aria-controls={isOpen ? "basic-menu" : undefined}
         aria-haspopup="true"
-        aria-expanded={open ? "true" : undefined}
-        onClick={handleClick}
+        aria-expanded={isOpen ? "true" : undefined}
+        onClick={(evt) => {
+          setAnchorEl(evt.currentTarget);
+        }}
         sx={styles.btnLink}
       >
         {page.title} <img src={arrow} alt="arrow" />
       </Button>
-      <Menu
-        id="basic-menu"
+      <SubMenu
         anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        MenuListProps={{
-          "aria-labelledby": "basic-button",
-        }}
-      >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
-      </Menu>
+        isOpen={isOpen}
+        onClose={() => setAnchorEl(null)}
+      />
     </div>
   );
 }

@@ -1,4 +1,6 @@
 import { Button } from "./Button/Button";
+import { Navbar } from "./Navbar/Navbar";
+import { Drawer } from "./Drawer/Drawer";
 import { HomePage } from "./HomePage/HomePage";
 import { ContactPage } from "./ContactPage/ContactPage";
 import { DemosPage } from "./DemosPage/DemosPage";
@@ -9,6 +11,8 @@ import { ServicesPage } from "./ServicesPage/ServicesPage";
 
 export {
   Button,
+  Navbar,
+  Drawer,
   ContactPage,
   DemosPage,
   Footer,

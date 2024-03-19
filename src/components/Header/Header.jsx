@@ -1,18 +1,15 @@
-import React, { useState } from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
+import { useState } from "react";
+import {
+  AppBar,
+  Box,
+  Toolbar,
+  IconButton,
+  Typography,
+  Container,
+} from "@mui/material";
 
-import Container from "@mui/material/Container";
-
-import { Navbar } from "../Navbar";
-import { Drawer } from "../Drawer";
-
-import logo_desk from "../../assets/img/logo_desc.svg";
-import logo_mob from "../../assets/img/logo_mob.svg";
-import burger_menu from "../../assets/img/burger_menu.svg";
+import { Navbar, Drawer } from "../../components";
+import { logo_desk, logo_mob, burger_menu } from "../../assets/img";
 
 import styles from "./styles";
 
