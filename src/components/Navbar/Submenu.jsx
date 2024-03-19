@@ -1,12 +1,12 @@
 import { Menu, MenuItem } from "@mui/material";
 
-export const SubMenu = ({ anchorEl, isOpen, onClose }) => {
-  const submenu = [
-    { id: 1, title: "Profile" },
-    { id: 2, title: "My account" },
-    { id: 3, title: "Logout" },
-  ];
+const submenu = [
+  { id: 1, title: "Profile" },
+  { id: 2, title: "My account" },
+  { id: 3, title: "Logout" },
+];
 
+export const SubMenu = ({ anchorEl, isOpen, onClose }) => {
   return (
     <Menu
       id="basic-menu"
