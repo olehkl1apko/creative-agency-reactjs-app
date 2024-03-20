@@ -37,8 +37,8 @@ export const FormComponent = () => {
           name="fullName"
           value={formik.values.fullName}
           onChange={formik.handleChange}
-          error={formik.touched.fullName && formik.errors.fullName}
-          helperText={
+          error={formik.touched.fullName && Boolean(formik.errors.fullName)}
+          helpertext={
             formik.touched.fullName && formik.errors.fullName
               ? formik.touched.fullName && formik.errors.fullName
               : " "
@@ -46,15 +46,14 @@ export const FormComponent = () => {
           InputProps={{ style: { fontSize: "16px" } }}
           sx={styles.textField}
         />
-
         <TextField
           placeholder="Email address"
           id="email"
           name="email"
           value={formik.values.email}
           onChange={formik.handleChange}
-          error={formik.touched.email && formik.errors.email}
-          helperText={
+          error={formik.touched.email && Boolean(formik.errors.email)}
+          helpertext={
             formik.touched.email && formik.errors.email
               ? formik.touched.email && formik.errors.email
               : " "
@@ -69,9 +68,9 @@ export const FormComponent = () => {
         name="message"
         value={formik.values.message}
         onChange={formik.handleChange}
-        error={formik.touched.message && formik.errors.message}
+        error={formik.touched.message && Boolean(formik.errors.message)}
         helpertext={formik.touched.message && formik.errors.message}
-        placeholder="write message"
+        placeholder="write message (more than 10 characters)"
         style={styles.textareaAutosize}
       />
       <Button type="submit">
