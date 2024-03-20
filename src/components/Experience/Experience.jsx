@@ -12,6 +12,12 @@ const links = [
   "UX/UI Design",
 ];
 
+const cards = [
+  { title: "dashborad design", src: dashborad },
+  { title: "landing pages", src: landing_page },
+  { title: "illustration design", src: ilustraton_page },
+];
+
 export const Experience = () => {
   return (
     <Box sx={styles.experience}>
@@ -32,26 +38,14 @@ export const Experience = () => {
           columns={{ xs: 4, sm: 8, md: 12 }}
           justifyContent="center"
         >
-          <Grid item xs={6} sm={4} md={4}>
-            <Box>
-              <Box component="img" src={dashborad} sx={styles.imgItem} />
-              <Typography sx={styles.contentTitle}>dashborad design</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={6} sm={4} md={4}>
-            <Box>
-              <Box component="img" src={landing_page} sx={styles.imgItem} />
-              <Typography sx={styles.contentTitle}>landing pages</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={6} sm={4} md={4}>
-            <Box>
-              <Box component="img" src={ilustraton_page} sx={styles.imgItem} />
-              <Typography sx={styles.contentTitle}>
-                illustration design
-              </Typography>
-            </Box>
-          </Grid>
+          {cards.map(({ title, src }) => (
+            <Grid key={title} item xs={6} sm={4} md={4}>
+              <Box>
+                <Box component="img" src={src} sx={styles.imgItem} />
+                <Typography sx={styles.contentTitle}>{title}</Typography>
+              </Box>
+            </Grid>
+          ))}
         </Grid>
       </Box>
     </Box>

@@ -5,6 +5,7 @@ import { Footer } from "./Footer/Footer";
 import { Header } from "./Header/Header";
 import { CreativeDesign } from "./CreativeDesign/CreativeDesign";
 import { Experience } from "./Experience/Experience";
+import { ContactUs } from "./ContactUs/ContactUs";
 
 import { Hero } from "./Hero/Hero";
 
@@ -17,4 +18,5 @@ export {
   Hero,
   CreativeDesign,
   Experience,
+  ContactUs,
 };
